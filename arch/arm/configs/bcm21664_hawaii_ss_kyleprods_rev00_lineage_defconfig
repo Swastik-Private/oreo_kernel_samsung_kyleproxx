@@ -1406,8 +1406,10 @@ CONFIG_BCMDHD_FW_PATH_4330="/system/vendor/firmware/fw_wifi_4330.bin"
 CONFIG_BCMDHD_NVRAM_PATH_4330="/system/vendor/firmware/fw_wifi_nvram_4330.txt"
 # CONFIG_BCM4334 is not set
 # CONFIG_BCM43241 is not set
-CONFIG_BCMDHD_FW_PATH="/system/vendor/firmware/fw_wifi.bin"
-CONFIG_BCMDHD_NVRAM_PATH="/system/vendor/firmware/fw_wifi_nvram.txt"
+#CONFIG_BCMDHD_FW_PATH="/system/vendor/firmware/fw_wifi.bin"
+CONFIG_BCMDHD_FW_PATH="/system/etc/wifi/bcmdhd_sta.bin"
+#CONFIG_BCMDHD_NVRAM_PATH="/system/vendor/firmware/fw_wifi_nvram.txt"
+CONFIG_BCMDHD_NVRAM_PATH="/system/etc/wifi/nvram_net.txt"
 CONFIG_WLAN_REGION_CODE=100
 # CONFIG_BRCM_CCX is not set
 # CONFIG_BRCMFMAC is not set
@@ -2907,6 +2909,7 @@ CONFIG_ZSMALLOC=y
 CONFIG_ANDROID=y
 CONFIG_ANDROID_BINDER_IPC=y
 CONFIG_ANDROID_BINDER_IPC_32BIT=y
+CONFIG_ANDROID_BINDER_DEVICES="binder,hwbinder,vndbinder"
 CONFIG_ASHMEM=y
 CONFIG_ANDROID_PERSISTENT_RAM=y
 CONFIG_ANDROID_RAM_CONSOLE=y
